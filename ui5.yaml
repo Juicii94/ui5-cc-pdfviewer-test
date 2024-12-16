@@ -5,7 +5,24 @@ type: module
 resources:
   configuration:
     paths:
-      "/resources/com/gavdilabs/ui5/cc/pdfviewer/": "./dist/resources/com/gavdilabs/ui5/cc/pdfviewer/"
+      "/resources/com/gavdilabs/ui5/cc/pdfviewer/": "./"
+---
+specVersion: "4.0"
+kind: extension
+type: project-shim
+metadata:
+  name: pdfjs-dist
+shims:
+  configuration:
+    "pdfjs-dist":
+      specVersion: "2.2"
+      type: module
+      metadata:
+        name: "pdfjs-dist"
+      resources:
+        configuration:
+          paths:
+            "/resources/com/gavdilabs/ui5/cc/pdfviewer/thirdparty/pdfjs-dist/": "./"
 # type: library
 # framework:
 #   name: SAPUI5
