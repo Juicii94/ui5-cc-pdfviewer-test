@@ -1,26 +1,21 @@
 {
-  "name": "com.gavdilabs.ui5.cc.pdfviewer",
+  "name": "@gavdi/com.gavdilabs.ui5.cc.pdfviewer",
   "version": "1.0.0",
   "description": "UI5 Library: com.gavdilabs.ui5.cc.pdfviewer",
   "author": "Emil Sejersbøll Valberg-Madsen",
   "license": "Apache-2.0",
   "types": "dist/index.d.ts",
   "files": [
-    ".eslintrc.js",
-    "LICENCE",
-    "README.md",
-    "tsconfig.json",
-    "ui5.yaml",
-    "dist/**/*.d.ts",
-    "dist/**/*.d.ts.map",
-    "src",
-    "test"
+    "dist",
+    "ui5.yaml"
   ],
   "scripts": {
     "clean": "rimraf dist coverage",
-    "build": "ui5 build --clean-dest",
+    "build:clean": "ui5 build --clean-dest",
+    "build": "ui5 build --all",
     "build:ts-interfaces": "npx @ui5/ts-interface-generator",
     "start": "ui5 serve -o test-resources/com/gavdilabs/ui5/cc/pdfviewer/PdfViewerExample.html",
+    "start:local": "ui5 serve -o test-resources/com/gavdilabs/ui5/cc/pdfviewer/PdfViewerExample.html --config ui5-local.yaml",
     "start:dist": "npm start -- --config ui5-dist.yaml",
     "testsuite": "ui5 serve -o test-resources/com/gavdilabs/ui5/cc/pdfviewer/qunit/testsuite.qunit.html",
     "ts-typecheck": "tsc --noEmit",
