@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd">
+	<name>com.gavdilabs.ui5.cc.pdfviewer</name>
+	<vendor>Emil Sejersbøll Valberg-Madsen</vendor>
+	<version>${version}</version>
+	<copyright>${copyright}</copyright>
+	<title>com.gavdilabs.ui5.cc.pdfviewer</title>
+	<documentation>Some description about com.gavdilabs.ui5.cc.pdfviewer</documentation>
+	<dependencies>
+		<dependency>
+			<libraryName>sap.ui.core</libraryName>
+		</dependency>
+	</dependencies>
+</library>
